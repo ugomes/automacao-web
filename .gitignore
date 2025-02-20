@@ -2,3 +2,5 @@
 logs/
 results/
 .robotcode_cache/
+output.xml/
+report.html/
