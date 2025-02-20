@@ -1,0 +1,30 @@
+*** Settings ***
+Documentation    Aqui ficarão todos os cenários
+
+Resource    ../../Src/Auto/Pages/Page_cadastro_cliente.resource
+Resource    ../../Src/Auto/Configs/Hooks.resource
+
+
+Test Setup    Abrir Navegador
+
+Test Teardown  Fechar Navegador
+
+*** Test Cases ***
+
+
+Cenário de teste 01: Validando Home Page
+    [Tags]    Validar_title_da_page
+    Deve conter o título do site
+
+Cenário de teste 02: Cadstrando Usuario com dados validos
+    [Tags]    Validar_cadastro_com_dados_validos
+    Deve conter o título do site
+    Aguardar o elemento de texto cilcavel esteja visivel
+    Deve poder clilcar no texto clicavel
+    Validando se a tela é a correta Titulo da Pagina
+    Aguardar o elemento do campo Nome ficar visível
+    Deve poder digitar no campo Nome
+    Deve poder digitar no campo email
+    Deve poder digitar no campo senha
+    Deve poder clicar no botao cadastrar
+    Deve validar o sucesso do cadastro
