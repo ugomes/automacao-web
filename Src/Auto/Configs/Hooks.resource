@@ -6,8 +6,8 @@ Resource    ../Variables/Var_globals.resource
 
 *** Keywords ***
 Abrir Navegador
-    Open browser    ${URL}  ${BROWSER}
+    Open Browser    ${URL}  ${BROWSER}
     Maximize Browser Window
 
 Fechar Navegador
-    Close browser
+    Close All Browsers

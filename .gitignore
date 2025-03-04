@@ -1,6 +1,14 @@
-.venv/
+venv/
 logs/
 results/
 .robotcode_cache/
 output.xml/
 report.html/
+.idea/
+log.html
+report.html
+output.xml
+selenium-screenshot-*.png
+interactive_console_output.xml
+
+
